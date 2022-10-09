@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="wrap-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-t-12 col-m-12 col-p-12">
+                    <h1>Pincode api</h1>
+                    <form>
+                        <label>Pincode: <input type="search" required maxlength="6" pattern="^[0-9]{6}$"
+                                placeholder="enter 6 digit" name="pin"></label>
+                        <button class="btn">Send</button> <span class="err"></span>
+
+                        <div class="scroll">
+                            <table class="pindata">
+                                <thead>
+                                    <tr>
+                                        <th>S.No</th>
+                                        <th>Name</th>
+                                        <th>Block</th>
+                                        <th>District</th>
+                                        <th>Division</th>
+                                        <th>Region</th>
+                                        <th>State</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
